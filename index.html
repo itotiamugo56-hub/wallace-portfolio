@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, view-transition=same-origin">
+  <title>Wallace Mugo Itotia · Observability-Driven Backend</title>
+  <meta name="description" content="Full-Stack Software Developer specializing in observability, ERP integration, and API-first architecture. Node.js, TypeScript, Python, NestJS, FastAPI.">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts: Inter + IBM Plex Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS Cascade Layers -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/styles/scroll-driven.css">
+  <link rel="stylesheet" href="/src/styles/view-transitions.css">
+  <link rel="stylesheet" href="/src/styles/command-palette.css">
+  <link rel="stylesheet" href="/src/styles/responsive.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/src/assets/icons/favicon.svg">
+</head>
+<body>
+  <!-- Floating Action Button (CV page) -->
+  <button class="fab" id="resume-fab" aria-label="View CV">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 3v12m0 0-3-3m3 3 3-3M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/>
+    </svg>
+    <span class="fab-hint">⌘K</span>
+  </button>
+
+  <!-- Chapter Markers (Sticky Dots) -->
+  <nav class="chapter-markers" aria-label="Scroll chapters">
+    <a href="#problem" class="marker" data-chapter="01">Problem</a>
+    <a href="#approach" class="marker" data-chapter="02">Approach</a>
+    <a href="#contact" class="marker" data-chapter="03">Contact</a>
+  </nav>
+
+  <!-- Main Content: Anti-Navigation Scroll Story -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero" data-transition-name="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="photo-container" id="hero-photo">
+            <img src="/src/assets/images/photo-wide.jpg" 
+                 alt="Wallace Mugo Itotia at dual-monitor setup with observability dashboard"
+                 class="hero-photo"
+                 loading="eager"
+                 width="640" height="640">
+            <div class="terminal-cursor-overlay"></div>
+          </div>
+          <h1 class="hero-name">Wallace Mugo Itotia</h1>
+          <p class="hero-title">Full-Stack Software Developer<br><span class="accent">Observability-Driven Architecture</span></p>
+          <div class="hero-meta">
+            <span class="location">Nakuru, Kenya</span>
+            <span class="availability">Open for roles</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section (Anchor 1) -->
+    <section id="problem" class="section problem" data-transition-name="problem">
+      <div class="container">
+        <div class="section-label">01 · Problem</div>
+        <h2 class="section-title">You don't just write code.<br>You instrument it.</h2>
+        <div class="problem-statement">
+          <p>Observability, structured logging, correlation IDs, error handling — architected in, not bolted on. Production systems fail silently. Yours won't.</p>
+          <div class="metric-badge" data-metric="debug-time">
+            <span class="metric-value">-60%</span>
+            <span class="metric-label">Debug time reduction via structured logging</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="section work" data-transition-name="work">
+      <div class="container">
+        <div class="section-label">02 · Experience</div>
+        <h2 class="section-title">Production backend systems</h2>
+        <div class="timeline">
+          <!-- Current Engagement (Real) -->
+          <div class="timeline-item">
+            <div class="timeline-period">Mar 2026 – Present</div>
+            <div class="timeline-content">
+              <h3>Backend Engineer (Active Engagement)</h3>
+              <p class="company">Microsoft Dynamics Integration · Senior Engineer-Led</p>
+              <ul>
+                <li>ERP integration for Microsoft Dynamics — data mapping, batch processing, API orchestration</li>
+                <li>Direct collaboration with senior backend engineer on production architecture</li>
+                <li>Structured logging and error handling for financial transaction reconciliation</li>
+                <li><span class="reference-note">✓ Reference available upon request</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Self-Directed R&D (The Prowess Builder) -->
+          <div class="timeline-item">
+            <div class="timeline-period">Jul 2025 – Present</div>
+            <div class="timeline-content">
+              <h3>Systems Architecture Research (Self-Directed)</h3>
+              <p class="company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts</p>
+              <ul>
+                <li><strong>AOP &amp; Separation of Concerns:</strong> Built middleware pipelines with cross-cutting logging, validation, and error handling</li>
+                <li><strong>Request Lifecycle Instrumentation:</strong> Implemented correlation IDs, structured logging (Pino/Winston), and trace propagation</li>
+                <li><strong>API Contract Structuring:</strong> Designed OpenAPI-first APIs with Zod/TypeScript validation and tenant-aware routing</li>
+                <li><strong>Architecture Exploration:</strong> NestJS modules, FastAPI dependency injection, repository pattern, and DDD principles</li>
+                <li><strong>Observability Stack:</strong> Simulated production-grade logging, metrics, and distributed tracing patterns</li>
+              </ul>
+              <p class="research-note">→ This body of work led directly to the Microsoft Dynamics engagement above</p>
+            </div>
+          </div>
+
+          <!-- IT Department -->
+          <div class="timeline-item">
+            <div class="timeline-period">Feb 2023 – Dec 2023</div>
+            <div class="timeline-content">
+              <h3>IT Department &amp; Computer Teacher</h3>
+              <p class="company">Precious Brain School, Nairobi</p>
+              <ul>
+                <li>Managed IT infrastructure, network systems, staff technical support</li>
+                <li>Systematic problem-solving applied to hardware/software issues</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Attaché -->
+          <div class="timeline-item">
+            <div class="timeline-period">Aug 2021 – Dec 2021</div>
+            <div class="timeline-content">
+              <h3>Attaché</h3>
+              <p class="company">NHIF, Chuka</p>
+              <ul>
+                <li>Troubleshot software/hardware/network, data organization, workflow efficiency</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section (Anchor 2) -->
+    <section id="approach" class="section approach" data-transition-name="approach">
+      <div class="container">
+        <div class="section-label">03 · Approach</div>
+        <h2 class="section-title">Debug like a puzzle.<br>Not scattergun.</h2>
+        <div class="approach-grid">
+          <div class="approach-card">
+            <div class="approach-icon">🔍</div>
+            <h3>Trace</h3>
+            <p>Request lifecycle → hook → batch → response. Eliminate variables systematically.</p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">📊</div>
+            <h3>Instrument</h3>
+            <p>Structured logging, correlation IDs, metrics. Observability as default.</p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">⚙️</div>
+            <h3>Integrate</h3>
+            <p>Systems that hate each other (ERP ↔ revenue authorities). API discipline under pressure.</p>
+          </div>
+        </div>
+        <div class="metric-badge" data-metric="batch-success">
+          <span class="metric-value">99.9%</span>
+          <span class="metric-label">Batch success rate — KRA + URA APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Observability Code Snippet -->
+    <section id="code" class="section code" data-transition-name="code">
+      <div class="container">
+        <div class="section-label">03.5 · Proof</div>
+        <h2 class="section-title">Structured logging isn't theory</h2>
+        <div class="code-block">
+          <pre><code><span style="color: #569CD6;">import</span> pino from <span style="color: #CE9178;">'pino'</span>;
+
+<span style="color: #569CD6;">const</span> <span style="color: #9CDCFE;">logger</span> = pino({
+  level: process.env.LOG_LEVEL || <span style="color: #CE9178;">'info'</span>,
+  formatters: {
+    bindings: (bindings) => ({
+      pid: bindings.pid,
+      host: bindings.hostname,
+      <span style="color: #9CDCFE;">correlation_id</span>: crypto.<span style="color: #DCDCAA;">randomUUID</span>()
+    })
+  }
+});
+
+<span style="color: #C586C0;">app</span>.<span style="color: #DCDCAA;">use</span>(<span style="color: #569CD6;">function</span> correlationMiddleware(req, res, next) {
+  <span style="color: #569CD6;">const</span> correlationId = req.headers[<span style="color: #CE9178;">'x-correlation-id'</span>] || crypto.<span style="color: #DCDCAA;">randomUUID</span>();
+  
+  <span style="color: #9CDCFE;">req</span>.logger = logger.<span style="color: #DCDCAA;">child</span>({ correlation_id: correlationId });
+  res.<span style="color: #DCDCAA;">setHeader</span>(<span style="color: #CE9178;">'X-Correlation-ID'</span>, correlationId);
+  
+  <span style="color: #9CDCFE;">logger</span>.<span style="color: #DCDCAA;">info</span>({
+    msg: <span style="color: #CE9178;">'Request received'</span>,
+    method: req.method,
+    path: req.url,
+    correlation_id: correlationId
+  });
+  
+  next();
+});</code></pre>
+        </div>
+        <p class="code-caption">Production-ready structured logging with correlation ID propagation — Pino + Express middleware pattern</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills" data-transition-name="skills">
+      <div class="container">
+        <div class="section-label">04 · Tooling</div>
+        <h2 class="section-title">Production stack</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">Node.js · NestJS · FastAPI · Python · TypeScript</div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">React · Next.js · Tailwind CSS</div>
+          </div>
+          <div class="skill-category">
+            <h3>Integration</h3>
+            <div class="skill-tags">REST APIs · ERP connectors · KRA API · URA API</div>
+          </div>
+          <div class="skill-category">
+            <h3>Observability</h3>
+            <div class="skill-tags">Structured logging · Request tracing · Correlation IDs</div>
+          </div>
+          <div class="skill-category">
+            <h3>Infrastructure</h3>
+            <div class="skill-tags">Docker · Batch processing · Environment parity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live API Demo -->
+    <section id="api-demo" class="section api-demo" data-transition-name="api-demo">
+      <div class="container">
+        <div class="section-label">04.5 · Live Proof</div>
+        <h2 class="section-title">Observability in production.<br>Running now.</h2>
+        <div class="api-card">
+          <div class="api-status">
+            <span class="status-dot"></span>
+            <span class="status-text">API Status: Live</span>
+          </div>
+          <div class="api-endpoints">
+            <div class="endpoint">
+              <code>GET /health</code>
+              <a href="https://wallace-observability-demo.onrender.com/health" target="_blank" rel="noopener noreferrer">Test →</a>
+            </div>
+            <div class="endpoint">
+              <code>GET /trace</code>
+              <a href="https://wallace-observability-demo.onrender.com/trace" target="_blank" rel="noopener noreferrer">Test →</a>
+            </div>
+            <div class="endpoint">
+              <code>GET /docs</code>
+              <a href="https://wallace-observability-demo.onrender.com/docs" target="_blank" rel="noopener noreferrer">OpenAPI →</a>
+            </div>
+          </div>
+          <p class="api-note">Every request includes a <code>X-Correlation-ID</code> header. Structured JSON logs capture the full lifecycle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Anchor 3) -->
+    <section id="contact" class="section contact" data-transition-name="contact">
+      <div class="container">
+        <div class="section-label">05 · Contact</div>
+        <h2 class="section-title">Integrate systems that hate each other.<br>Let's talk.</h2>
+        <div class="contact-options">
+          <button class="contact-btn" data-action="copy-email">
+            📋 Copy email
+          </button>
+          <button class="contact-btn" data-action="mailto-email">
+            ✉️ Send email
+          </button>
+          <button class="contact-btn" data-action="view-cv">
+            📄 View CV
+          </button>
+          <button class="contact-btn" data-action="whatsapp">
+            💬 WhatsApp
+          </button>
+          <button class="contact-btn secondary" data-action="full-history">
+            📚 Full work history
+          </button>
+        </div>
+        <div class="contact-note">
+          <p>Or press <kbd>⌘K</kbd> / <kbd>Ctrl+K</kbd> for command palette</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Command Palette Modal -->
+  <div id="command-palette" class="command-palette" aria-hidden="true" role="dialog" aria-label="Command palette">
+    <div class="command-overlay"></div>
+    <div class="command-container">
+      <div class="command-input-wrapper">
+        <span class="command-icon">⌘</span>
+        <input type="text" id="command-input" placeholder="Type a command..." autocomplete="off">
+      </div>
+      <div id="command-results" class="command-results"></div>
+      <div class="command-hint">
+        <span><kbd>↵</kbd> select</span>
+        <span><kbd>↓↑</kbd> navigate</span>
+        <span><kbd>esc</kbd> close</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@layer view-transitions {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.3s;
+  }
+  
+  ::view-transition-old(hero),
+  ::view-transition-new(hero) {
+    animation-duration: 0.4s;
+  }
+  
+  ::view-transition-old(problem),
+  ::view-transition-new(problem) {
+    animation-duration: 0.3s;
+  }
+  
+  ::view-transition-old(work),
+  ::view-transition-new(work) {
+    animation-duration: 0.35s;
+  }
+  
+  /* Morph shared elements */
+  .hero .photo-container {
+    view-transition-name: hero-photo;
+  }
+  
+  .hero-name {
+    view-transition-name: hero-name;
+  }
+  
+  .section-title {
+    view-transition-name: section-title;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
+  }
+}

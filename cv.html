@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, view-transition=same-origin">
+  <title>Wallace Mugo Itotia · CV / Resume</title>
+  <meta name="description" content="Full-stack software developer specializing in observability, AOP, and systems architecture.">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: #0a0a0a;
+      color: #e5e5e5;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding: 2rem 1rem;
+    }
+    
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+        padding: 0;
+      }
+      .print-hide {
+        display: none;
+      }
+      .cv-container {
+        max-width: 100%;
+        padding: 0;
+      }
+      .skill-tag, .metric-badge {
+        background: #f0f0f0 !important;
+        border-color: #ccc !important;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    
+    .cv-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    /* Header */
+    .cv-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #1f1f1f;
+    }
+    
+    .cv-name {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .cv-title {
+      font-size: 1.125rem;
+      color: #2563eb;
+      font-family: 'IBM Plex Mono', monospace;
+      margin-bottom: 1rem;
+    }
+    
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      color: #737373;
+    }
+    
+    .cv-contact a {
+      color: #737373;
+      text-decoration: none;
+    }
+    
+    .cv-contact a:hover {
+      color: #2563eb;
+    }
+    
+    /* Sections */
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+    
+    .cv-section-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+    }
+    
+    /* Objective */
+    .cv-objective {
+      background: #111;
+      padding: 1.25rem;
+      border-left: 3px solid #2563eb;
+      margin-bottom: 2rem;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    
+    /* Skills grid */
+    .skills-grid-cv {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .skill-category-cv h3 {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #2563eb;
+      margin-bottom: 0.75rem;
+    }
+    
+    .skill-tags-cv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .skill-tag {
+      background: #1a1a1a;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #e5e5e5;
+      border: 1px solid #2a2a2a;
+    }
+    
+    /* Timeline */
+    .cv-timeline-item {
+      margin-bottom: 1.75rem;
+    }
+    
+    .cv-timeline-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+    
+    .cv-role {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    
+    .cv-period {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #2563eb;
+    }
+    
+    .cv-company {
+      font-size: 0.875rem;
+      color: #737373;
+      margin-bottom: 0.75rem;
+    }
+    
+    .cv-highlights {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .cv-highlights li {
+      font-size: 0.875rem;
+      color: #a3a3a3;
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      border-left: 2px solid #2563eb;
+    }
+    
+    .reference-note {
+      color: #2563eb;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    
+    .research-note {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      color: #eab308;
+      margin-top: 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #1f1f1f;
+    }
+    
+    /* Metrics */
+    .cv-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .metric-card {
+      background: #111;
+      padding: 1rem 1.5rem;
+      border-left: 3px solid #2563eb;
+      flex: 1;
+      min-width: 150px;
+    }
+    
+    .metric-value {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2563eb;
+      display: block;
+    }
+    
+    .metric-label {
+      font-size: 0.75rem;
+      color: #737373;
+    }
+    
+    /* Live proof */
+    .live-proof {
+      background: #111;
+      padding: 1.25rem;
+      border: 1px solid #2563eb;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    
+    .live-proof a {
+      color: #2563eb;
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+    
+    .live-proof a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Education */
+    .cv-education-item {
+      margin-bottom: 1rem;
+    }
+    
+    .cv-degree {
+      font-weight: 600;
+    }
+    
+    .cv-institution {
+      font-size: 0.875rem;
+      color: #737373;
+    }
+    
+    /* Back button */
+    .back-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 40px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      z-index: 100;
+    }
+    
+    .back-button:hover {
+      background: #3b82f6;
+    }
+    
+    @media (max-width: 768px) {
+      .cv-contact {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      .cv-timeline-header {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .back-button {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <!-- Header -->
+    <div class="cv-header">
+      <h1 class="cv-name">Wallace Mugo Itotia</h1>
+      <div class="cv-title">Full-Stack Software Developer · Systems Architecture & Observability</div>
+      <div class="cv-contact">
+        <span>📧 itotiamugo@gmail.com</span>
+        <span>📞 +254 743 089 421</span>
+        <span>📍 Nakuru, Kenya</span>
+        <span>🐙 <a href="https://github.com/itotiamugo56-hub" target="_blank">github.com/itotiamugo56-hub</a></span>
+      </div>
+    </div>
+
+    <!-- Objective -->
+    <div class="cv-objective">
+      Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice in AOP, separation of concerns, and distributed tracing. Currently engaged in production ERP integration (Microsoft Dynamics).
+    </div>
+
+    <!-- Skills -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">Technical Architecture</h2>
+      <div class="skills-grid-cv">
+        <div class="skill-category-cv">
+          <h3>Backend</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Architecture</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">AOP</span>
+            <span class="skill-tag">Separation of Concerns</span>
+            <span class="skill-tag">DDD</span>
+            <span class="skill-tag">Repository Pattern</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Observability</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Correlation IDs</span>
+            <span class="skill-tag">Structured Logging</span>
+            <span class="skill-tag">Request Tracing</span>
+            <span class="skill-tag">Pino/Winston</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>API & Integration</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">OpenAPI</span>
+            <span class="skill-tag">Microsoft Dynamics</span>
+            <span class="skill-tag">Idempotency</span>
+            <span class="skill-tag">Batch Processing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Proof -->
+    <div class="live-proof">
+      <span style="color:#2563eb">⚡ LIVE PROOF</span><br>
+      <a href="https://wallace-observability-demo.onrender.com" target="_blank">wallace-observability-demo.onrender.com</a> → 
+      <a href="https://wallace-observability-demo.onrender.com/health" target="_blank">/health</a> · 
+      <a href="https://wallace-observability-demo.onrender.com/trace" target="_blank">/trace</a> · 
+      <a href="https://wallace-observability-demo.onrender.com/docs" target="_blank">/docs</a>
+    </div>
+
+    <!-- Metrics -->
+    <div class="cv-metrics">
+      <div class="metric-card">
+        <span class="metric-value">-60%</span>
+        <span class="metric-label">Debug time via structured logging</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">99.9%</span>
+        <span class="metric-label">Batch success (KRA/URA mocks)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">3</span>
+        <span class="metric-label">Production backend services</span>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">Experience</h2>
+      
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Backend Engineer (Active Engagement)</span>
+          <span class="cv-period">Mar 2026 – Present</span>
+        </div>
+        <div class="cv-company">Microsoft Dynamics Integration · Senior Engineer-Led</div>
+        <ul class="cv-highlights">
+          <li>ERP integration for Microsoft Dynamics — data mapping, batch processing, API orchestration</li>
+          <li>Direct collaboration with senior backend engineer on production architecture</li>
+          <li>Structured logging and error handling for financial transaction reconciliation</li>
+        </ul>
+        <div class="reference-note">✓ Reference available upon request</div>
+      </div>
+
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Systems Architecture Research (Self-Directed)</span>
+          <span class="cv-period">Jul 2025 – Present</span>
+        </div>
+        <div class="cv-company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts</div>
+        <ul class="cv-highlights">
+          <li><strong>AOP & Separation of Concerns:</strong> Built middleware pipelines with cross-cutting logging, validation</li>
+          <li><strong>Request Lifecycle Instrumentation:</strong> Correlation IDs, structured logging, trace propagation</li>
+          <li><strong>API Contract Structuring:</strong> OpenAPI-first APIs with Zod/TypeScript validation</li>
+          <li><strong>Architecture Exploration:</strong> NestJS modules, FastAPI DI, repository pattern, DDD</li>
+        </ul>
+        <div class="research-note">→ This work led directly to the Microsoft Dynamics engagement above</div>
+      </div>
+
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">IT Department & Computer Teacher</span>
+          <span class="cv-period">Feb 2023 – Dec 2023</span>
+        </div>
+        <div class="cv-company">Precious Brain School, Nairobi</div>
+        <ul class="cv-highlights">
+          <li>Managed IT infrastructure, network systems, staff technical support</li>
+          <li>Systematic problem-solving applied to hardware/software issues</li>
+        </ul>
+      </div>
+
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Attaché</span>
+          <span class="cv-period">Aug 2021 – Dec 2021</span>
+        </div>
+        <div class="cv-company">NHIF, Chuka</div>
+        <ul class="cv-highlights">
+          <li>Troubleshot software/hardware/network, data organization, workflow efficiency</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">Education</h2>
+      <div class="cv-education-item">
+        <div class="cv-degree">Bachelor of Science in Computer Science</div>
+        <div class="cv-institution">Chuka University | 2017 </div>
+      </div>
+      <div class="cv-education-item">
+        <div class="cv-degree">Kenya Certificate of Secondary Education (KCSE)</div>
+        <div class="cv-institution">Maai Mahiu Boys' Secondary School | B (Plain)</div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">Languages</h2>
+      <div class="skill-tags-cv">
+        <span class="skill-tag">English (Professional)</span>
+        <span class="skill-tag">Swahili (Native)</span>
+      </div>
+    </div>
+
+    <!-- References -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">References</h2>
+      <p style="font-size: 0.875rem; color: #737373;">Available upon request — direct from Microsoft Dynamics engagement lead.</p>
+    </div>
+  </div>
+
+  <button class="back-button print-hide" onclick="window.location.href='/'">← Back to Portfolio</button>
+</body>
+</html>

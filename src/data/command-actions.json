@@ -1,0 +1,79 @@
+﻿[
+  {
+    "id": "copy-email",
+    "label": "Copy email address",
+    "shortcut": "⌘C",
+    "handler": "clipboard",
+    "clipboard": "itotiamugo@gmail.com"
+  },
+  {
+    "id": "resume",
+    "label": "View CV (styled page)",
+    "shortcut": "⌘R",
+    "handler": "url",
+    "url": "/cv.html"
+  },
+  {
+    "id": "full-history",
+    "label": "GitHub Profile",
+    "shortcut": "⌘H",
+    "handler": "url",
+    "url": "https://github.com/itotiamugo56-hub"
+  },
+  {
+    "id": "talk-erp",
+    "label": "Ask about: ERP + expense integration",
+    "shortcut": "⌘E",
+    "handler": "clipboard",
+    "clipboard": "Ask Wallace about reconciling ERP and expense data models"
+  },
+  {
+    "id": "talk-observability",
+    "label": "Ask about: 60% debug reduction",
+    "shortcut": "⌘O",
+    "handler": "clipboard",
+    "clipboard": "Ask Wallace about structured logging and correlation IDs"
+  },
+  {
+    "id": "talk-kra-ura",
+    "label": "Ask about: KRA + URA API integration",
+    "shortcut": "⌘T",
+    "handler": "clipboard",
+    "clipboard": "Ask Wallace about batch submission and idempotency for tax APIs"
+  },
+{
+  "id": "whatsapp",
+  "label": "Chat on WhatsApp",
+  "shortcut": "⌘W",
+  "handler": "url",
+  "url": "https://wa.me/254703533346"
+},
+  {
+    "id": "view-cv",
+    "label": "View CV / Resume",
+    "shortcut": "⌘V",
+    "handler": "url",
+    "url": "/cv.html"
+  },
+  {
+    "id": "demo-api-health",
+    "label": "Live API: Health check (observability demo)",
+    "shortcut": "⌘1",
+    "handler": "url",
+    "url": "https://wallace-observability-demo.onrender.com/health"
+  },
+  {
+    "id": "demo-api-trace",
+    "label": "Live API: Request trace with correlation ID",
+    "shortcut": "⌘2",
+    "handler": "url",
+    "url": "https://wallace-observability-demo.onrender.com/trace"
+  },
+  {
+    "id": "demo-api-docs",
+    "label": "Live API: OpenAPI documentation",
+    "shortcut": "⌘3",
+    "handler": "url",
+    "url": "https://wallace-observability-demo.onrender.com/docs"
+  }
+]

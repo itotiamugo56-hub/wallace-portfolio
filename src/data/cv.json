@@ -1,0 +1,63 @@
+﻿{
+  "name": "Wallace Mugo Itotia",
+  "title": "Full-Stack Software Developer — Systems Architecture & Observability",
+  "location": "Nakuru, Kenya",
+  "phone": "+254 743 089 421",
+  "email": "coder.wallace@[domain]",
+  "objective": "Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice, now engaged in production ERP integration.",
+  "skills": {
+    "backend": ["Node.js", "NestJS", "FastAPI", "Python", "TypeScript"],
+    "architecture": ["AOP", "Separation of Concerns", "DDD", "Repository Pattern", "Middleware Pipelines"],
+    "observability": ["Structured logging", "Correlation IDs", "Request tracing", "Pino", "Winston"],
+    "api": ["OpenAPI", "Zod validation", "Tenant-aware routing", "Idempotency"],
+    "integration": ["Microsoft Dynamics", "ERP data mapping", "Batch processing"]
+  },
+  "experience": [
+    {
+      "role": "Backend Engineer (Active Engagement)",
+      "company": "Microsoft Dynamics Integration · Senior Engineer-Led",
+      "period": "Mar 2025 – Present",
+      "highlights": [
+        "ERP integration for Microsoft Dynamics — data mapping, batch processing, API orchestration",
+        "Direct collaboration with senior backend engineer on production architecture",
+        "Reference available upon request"
+      ]
+    },
+    {
+      "role": "Systems Architecture Research (Self-Directed)",
+      "company": "Deep-dive: AOP · OOP · Request Lifecycle · API Contracts",
+      "period": "Jul 2024 – Present",
+      "highlights": [
+        "AOP & Separation of Concerns: Middleware pipelines with cross-cutting logging and validation",
+        "Request Lifecycle Instrumentation: Correlation IDs, structured logging (Pino/Winston), trace propagation",
+        "API Contract Structuring: OpenAPI-first APIs with Zod/TypeScript validation",
+        "Architecture: NestJS modules, FastAPI DI, repository pattern, DDD principles",
+        "This body of work led directly to the Microsoft Dynamics engagement"
+      ]
+    },
+    {
+      "role": "IT Department & Computer Teacher",
+      "company": "Precious Brain School, Nairobi",
+      "period": "Feb 2023 – Dec 2023",
+      "highlights": [
+        "Managed IT infrastructure, network systems, staff technical support"
+      ]
+    },
+    {
+      "role": "Attaché",
+      "company": "NHIF, Chuka",
+      "period": "Aug 2021 – Dec 2021",
+      "highlights": [
+        "Troubleshot software/hardware/network, data organization"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc Computer Science",
+      "institution": "Chuka University",
+      "period": "2017 – Present"
+    }
+  ],
+  "languages": ["English (Professional)", "Swahili (Native)"]
+}

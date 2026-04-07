@@ -1,0 +1,79 @@
+@layer overrides {
+  @media (max-width: 768px) {
+    .section {
+      padding: 4rem 1rem;
+      min-height: auto;
+    }
+    
+    .timeline-item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    
+    .timeline-period {
+      margin-bottom: 0.5rem;
+    }
+    
+    .approach-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .fab {
+      bottom: 1rem;
+      right: 1rem;
+      width: 48px;
+      height: 48px;
+    }
+    
+    .fab-hint {
+      display: none;
+    }
+    
+    .chapter-markers {
+      display: none;
+    }
+    
+    .command-container {
+      top: 15%;
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-options {
+      flex-direction: column;
+    }
+    
+    .contact-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #fafafa;
+      color: #171717;
+    }
+    
+    :root {
+      --bg-primary: #fafafa;
+      --text-primary: #171717;
+      --text-secondary: #525252;
+      --border-subtle: #e5e5e5;
+    }
+    
+    .approach-card,
+    .command-container {
+      background: #ffffff;
+    }
+    
+    .metric-badge {
+      background: #f0f0f0;
+    }
+  }
+}

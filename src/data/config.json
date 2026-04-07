@@ -1,0 +1,23 @@
+﻿{
+  "theme": "clinical-utilitarian",
+  "accentColor": "#2563eb", 
+  "contact": {
+  "email": "itotiamugo@gmail.com",
+  "github": "/itotiamugo56-hub",
+  "linkedin": "/in/itotia-mugo-85349a261",
+  "whatsapp": "254703533346"
+},
+
+  "resume": {
+    "pdfPath": "/src/assets/pdfs/resume.pdf",
+    "longVersionUrl": "https://github.com/itotiamugo56-hub/demo-api"
+  },
+  "placeholders": {
+    "domainEmail": "itotiamugo56@gmail.com",
+    "githubUsername": "itotiamugo56-hub",
+    "linkedinUsername": "itotia-mugo-85349a261",
+    "longCvUrl": "https://github.com/itotiamugo56-hub/demo-api",
+    "erpSystems": ["Microsoft Dynamics"],
+    "expensePlatforms": ["待定"]
+  }
+}

@@ -1,0 +1,102 @@
+@layer components {
+  .command-palette {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0.15s;
+  }
+  
+  .command-palette[aria-hidden="false"] {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .command-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .command-container {
+    position: relative;
+    top: 20%;
+    width: 90%;
+    max-width: 640px;
+    background: #111;
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+  
+  .command-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  
+  .command-icon {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-right: 0.75rem;
+  }
+  
+  #command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  #command-input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .command-results {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  
+  .command-item {
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  
+  .command-item:hover,
+  .command-item.selected {
+    background: #1a1a1a;
+  }
+  
+  .command-label {
+    font-size: 0.9375rem;
+  }
+  
+  .command-shortcut {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+  
+  .command-hint {
+    padding: 0.5rem 1rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+}
