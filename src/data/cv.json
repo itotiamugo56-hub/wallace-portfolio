@@ -3,14 +3,16 @@
   "title": "Full-Stack Software Developer — Systems Architecture & Observability",
   "location": "Nakuru, Kenya",
   "phone": "+254 743 089 421",
-  "email": "coder.wallace@[domain]",
-  "objective": "Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice, now engaged in production ERP integration.",
+  "email": "itotiamugo@gmail.com",
+  "github": "itotiamugo56-hub",
+  "objective": "Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice in AOP, separation of concerns, and distributed tracing. Currently engaged in production ERP integration (Microsoft Dynamics).",
   "skills": {
-    "backend": ["Node.js", "NestJS", "FastAPI", "Python", "TypeScript"],
-    "architecture": ["AOP", "Separation of Concerns", "DDD", "Repository Pattern", "Middleware Pipelines"],
-    "observability": ["Structured logging", "Correlation IDs", "Request tracing", "Pino", "Winston"],
-    "api": ["OpenAPI", "Zod validation", "Tenant-aware routing", "Idempotency"],
-    "integration": ["Microsoft Dynamics", "ERP data mapping", "Batch processing"]
+    "backend": ["Node.js", "NestJS", "FastAPI", "Python", "TypeScript", "Go (Learning)"],
+    "architecture": ["AOP", "Separation of Concerns", "DDD", "Repository Pattern", "CQRS", "Event-Driven"],
+    "observability": ["Correlation IDs", "Structured Logging", "Request Tracing", "Pino/Winston", "OpenTelemetry"],
+    "api": ["OpenAPI/Swagger", "Microsoft Dynamics", "Idempotency", "Batch Processing", "Webhooks"],
+    "frontend": ["React", "Next.js", "Tailwind", "Vite"],
+    "devops": ["GitHub Actions", "Vercel", "Netlify", "Render", "Basic AWS", "Docker"]
   },
   "experience": [
     {
@@ -20,19 +22,19 @@
       "highlights": [
         "ERP integration for Microsoft Dynamics — data mapping, batch processing, API orchestration",
         "Direct collaboration with senior backend engineer on production architecture",
-        "Reference available upon request"
-      ]
+        "Structured logging and error handling for financial transaction reconciliation"
+      ],
+      "reference": "Available upon request"
     },
     {
       "role": "Systems Architecture Research (Self-Directed)",
       "company": "Deep-dive: AOP · OOP · Request Lifecycle · API Contracts",
       "period": "Jul 2024 – Present",
       "highlights": [
-        "AOP & Separation of Concerns: Middleware pipelines with cross-cutting logging and validation",
-        "Request Lifecycle Instrumentation: Correlation IDs, structured logging (Pino/Winston), trace propagation",
+        "AOP & Separation of Concerns: Built middleware pipelines with cross-cutting logging, validation",
+        "Request Lifecycle Instrumentation: Correlation IDs, structured logging, trace propagation",
         "API Contract Structuring: OpenAPI-first APIs with Zod/TypeScript validation",
-        "Architecture: NestJS modules, FastAPI DI, repository pattern, DDD principles",
-        "This body of work led directly to the Microsoft Dynamics engagement"
+        "Architecture Exploration: NestJS modules, FastAPI DI, repository pattern, DDD"
       ]
     },
     {
@@ -40,7 +42,8 @@
       "company": "Precious Brain School, Nairobi",
       "period": "Feb 2023 – Dec 2023",
       "highlights": [
-        "Managed IT infrastructure, network systems, staff technical support"
+        "Managed IT infrastructure, network systems, staff technical support",
+        "Systematic problem-solving applied to hardware/software issues"
       ]
     },
     {
@@ -48,16 +51,21 @@
       "company": "NHIF, Chuka",
       "period": "Aug 2021 – Dec 2021",
       "highlights": [
-        "Troubleshot software/hardware/network, data organization"
+        "Troubleshot software/hardware/network, data organization, workflow efficiency"
       ]
     }
   ],
   "education": [
     {
-      "degree": "BSc Computer Science",
+      "degree": "Bachelor of Science in Computer Science",
       "institution": "Chuka University",
       "period": "2017 – Present"
     }
+  ],
+  "metrics": [
+    "-60% debug time via structured logging",
+    "99.9% batch success rate",
+    "3 production backend services"
   ],
   "languages": ["English (Professional)", "Swahili (Native)"]
 }

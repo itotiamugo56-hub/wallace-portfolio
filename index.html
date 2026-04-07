@@ -47,7 +47,7 @@
       <div class="container">
         <div class="hero-content">
           <div class="photo-container" id="hero-photo">
-            <img src="/src/assets/images/photo-wide.jpg" 
+            <img src="/src/assets/images/photo-macro.jpg" 
                  alt="Wallace Mugo Itotia at dual-monitor setup with observability dashboard"
                  class="hero-photo"
                  loading="eager"
@@ -56,9 +56,18 @@
           </div>
           <h1 class="hero-name">Wallace Mugo Itotia</h1>
           <p class="hero-title">Full-Stack Software Developer<br><span class="accent">Observability-Driven Architecture</span></p>
+          
           <div class="hero-meta">
-            <span class="location">Nakuru, Kenya</span>
+            <span class="location">Nairobi, Kenya</span>
             <span class="availability">Open for roles</span>
+          </div>
+
+          <!-- GitHub Activity Badge -->
+          <div class="github-activity">
+            <img src="https://ghchart.rshah.org/itotiamugo56-hub" 
+                 alt="GitHub contributions heatmap" 
+                 class="github-chart">
+            <p class="github-caption">GitHub activity · last year</p>
           </div>
         </div>
       </div>
@@ -268,6 +277,63 @@
             </div>
           </div>
           <p class="api-note">Every request includes a <code>X-Correlation-ID</code> header. Structured JSON logs capture the full lifecycle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Infrastructure Ecosystem -->
+    <section id="infrastructure" class="section infrastructure" data-transition-name="infrastructure">
+      <div class="container">
+        <div class="section-label">04.6 · Toolchain</div>
+        <h2 class="section-title">From localhost to global.<br>Modern infrastructure.</h2>
+        <div class="infrastructure-grid">
+          <div class="infra-card">
+            <div class="infra-icon">🐙</div>
+            <h3>GitHub</h3>
+            <div class="infra-status">
+              <span class="status-dot-small green"></span>
+              <span>Version control</span>
+            </div>
+            <p class="infra-lesson">Source code management, CI/CD triggers, and deployment hooks.</p>
+            <a href="https://github.com/itotiamugo56-hub/wallace-portfolio" target="_blank" rel="noopener noreferrer" class="infra-link">→ Repository</a>
+          </div>
+
+          <div class="infra-card">
+            <div class="infra-icon">▲</div>
+            <h3>Vercel</h3>
+            <div class="infra-status">
+              <span class="status-dot-small green"></span>
+              <span>Edge network</span>
+            </div>
+            <p class="infra-lesson">Site deployment, preview branches, automatic HTTPS.</p>
+            <span class="infra-note">Configured for Vite + TypeScript</span>
+          </div>
+
+          <div class="infra-card">
+            <div class="infra-icon">⚡</div>
+            <h3>Netlify</h3>
+            <div class="infra-status">
+              <span class="status-dot-small green"></span>
+              <span>Production host</span>
+            </div>
+            <p class="infra-lesson">Global CDN, form handling, serverless functions ready.</p>
+            <a href="https://mugo-portfolio.netlify.app" target="_blank" rel="noopener noreferrer" class="infra-link">→ Live site</a>
+          </div>
+
+          <div class="infra-card">
+            <div class="infra-icon">🚂</div>
+            <h3>Render</h3>
+            <div class="infra-status">
+              <span class="status-dot-small green"></span>
+              <span>API hosting</span>
+            </div>
+            <p class="infra-lesson">Python backend with structured logging and correlation IDs.</p>
+            <a href="https://wallace-observability-demo.onrender.com/health" target="_blank" rel="noopener noreferrer" class="infra-link">→ /health</a>
+            <a href="https://wallace-observability-demo.onrender.com/trace" target="_blank" rel="noopener noreferrer" class="infra-link">→ /trace</a>
+          </div>
+        </div>
+        <div class="infra-timeline">
+          <p class="timeline-lesson"><span class="accent">Full-stack deployment:</span> GitHub → Vercel/Netlify (frontend) → Render (backend). End-to-end ownership.</p>
         </div>
       </div>
     </section>

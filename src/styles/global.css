@@ -87,21 +87,6 @@
     min-height: 100vh;
   }
 
-  .research-note {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--debug-yellow);
-    margin-top: 0.75rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border-subtle);
-  }
-
-  .reference-note {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--accent);
-  }
-  
   .hero-content {
     text-align: center;
   }
@@ -124,6 +109,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
   
   .terminal-cursor-overlay {
@@ -142,7 +128,7 @@
   
   /* Macro photo on hover */
   .photo-container:hover .hero-photo {
-    content: url('/src/assets/images/photo-macro.jpg');
+    content: url('/src/assets/images/photo-wide.jpg');
   }
   
   @keyframes blink {
@@ -169,6 +155,142 @@
     gap: 1rem;
     font-size: 0.875rem;
     color: var(--text-secondary);
+  }
+
+  /* GitHub Activity Badge */
+  .github-activity {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .github-chart {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #111;
+    padding: 0.5rem;
+    border: 1px solid var(--border-subtle);
+  }
+
+  .github-caption {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+  }
+
+  .research-note {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--debug-yellow);
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .reference-note {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+  }
+
+  /* Infrastructure Ecosystem */
+  .infrastructure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .infra-card {
+    background: #111;
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .infra-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .infra-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .infra-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .infra-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+
+  .status-dot-small {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .status-dot-small.green {
+    background-color: #10b981;
+    box-shadow: 0 0 4px #10b981;
+  }
+
+  .infra-lesson {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .infra-note {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--debug-yellow);
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .infra-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: opacity 0.15s;
+    display: inline-block;
+  }
+
+  .infra-link:hover {
+    opacity: 0.7;
+  }
+
+  .infra-timeline {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #0a0a0a;
+    border-left: 3px solid var(--accent);
+  }
+
+  .timeline-lesson {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+    font-family: var(--font-mono);
+  }
+
+  .timeline-lesson .accent {
+    font-weight: 600;
   }
   
   /* Problem statement */
