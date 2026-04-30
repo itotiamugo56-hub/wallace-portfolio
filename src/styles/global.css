@@ -194,6 +194,183 @@
     color: var(--accent);
   }
 
+  /* Featured Project Card (Zero-Trust Logistics) */
+  .featured {
+    background: linear-gradient(135deg, #0a0a0a 0%, #0f0f1a 100%);
+  }
+
+  .project-card {
+    background: #111;
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.2s ease;
+  }
+
+  .project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+
+  .project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .metric-badge-project {
+    background: #0a0a0a;
+    border: 1px solid var(--border-subtle);
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .metric-badge-project .metric-value {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .metric-badge-project .metric-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+
+  .project-description {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 1.5rem 0;
+  }
+
+  .project-description p {
+    margin-bottom: 1rem;
+  }
+
+  .project-status-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .project-status {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    color: var(--accent);
+  }
+
+  /* Command Palette */
+  .command-palette {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0.15s;
+  }
+  
+  .command-palette[aria-hidden="false"] {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .command-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .command-container {
+    position: relative;
+    top: 20%;
+    width: 90%;
+    max-width: 640px;
+    background: #111;
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+  
+  .command-input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  
+  .command-icon {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-right: 0.75rem;
+  }
+  
+  #command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  #command-input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .command-results {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+  
+  .command-item {
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  
+  .command-item:hover,
+  .command-item.selected {
+    background: #1a1a1a;
+  }
+  
+  .command-label {
+    font-size: 0.9375rem;
+  }
+  
+  .command-shortcut {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+  
+  .command-hint {
+    padding: 0.5rem 1rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+
   /* Infrastructure Ecosystem */
   .infrastructure-grid {
     display: grid;
@@ -660,13 +837,138 @@
     border-radius: 4px;
     color: var(--accent);
   }
+
+  /* Chapter Markers (Sticky Dots) */
+  .chapter-markers {
+    position: fixed;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 90;
+  }
+
+  .chapter-markers .marker {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.1em;
+    transition: color 0.15s;
+  }
+
+  .chapter-markers .marker:hover,
+  .chapter-markers .marker.active {
+    color: var(--accent);
+  }
 }
 
 @layer overrides {
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
+  @media (max-width: 768px) {
+    .section {
+      padding: 4rem 1rem;
+      min-height: auto;
+    }
+    
+    .timeline-item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    
+    .timeline-period {
+      margin-bottom: 0.5rem;
+    }
+    
+    .approach-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .fab {
+      bottom: 1rem;
+      right: 1rem;
+      width: 48px;
+      height: 48px;
+    }
+    
+    .fab-hint {
+      display: none;
+    }
+    
+    .chapter-markers {
+      display: none;
+    }
+    
+    .command-container {
+      top: 15%;
+      width: 95%;
+    }
+
+    .project-metrics {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .metric-badge-project {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-options {
+      flex-direction: column;
+    }
+    
+    .contact-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .project-card {
+      padding: 1rem;
+    }
+
+    .project-status-badges {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body {
+      background: #fafafa;
+      color: #171717;
+    }
+    
+    :root {
+      --bg-primary: #fafafa;
+      --text-primary: #171717;
+      --text-secondary: #525252;
+      --border-subtle: #e5e5e5;
+    }
+    
+    .approach-card,
+    .command-container,
+    .infra-card,
+    .project-card,
+    .api-card {
+      background: #ffffff;
+    }
+    
+    .metric-badge {
+      background: #f0f0f0;
+    }
+
+    .command-item:hover,
+    .command-item.selected {
+      background: #f0f0f0;
     }
   }
 }

@@ -1,0 +1,106 @@
+{
+  "name": "Wallace Mugo Itotia",
+  "title": "Full-Stack Software Developer — Systems Architecture & Observability",
+  "location": "Nakuru, Kenya",
+  "phone": "+254 743 089 421",
+  "email": "itotiamugo@gmail.com",
+  "github": "itotiamugo56-hub",
+  "objective": "Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice in AOP, separation of concerns, and distributed tracing. Currently engaged in production ERP integration (Microsoft Dynamics) and zero-trust logistics platform architecture. Delivered production offline-first repair platform with thermal printing and WhatsApp integration.",
+  "skills": {
+    "backend": ["Node.js", "NestJS", "FastAPI", "Python", "TypeScript", "Go", "Rust"],
+    "offline-sync": ["CRDT", "Automerge", "SQLite", "Print Queue", "LWW Conflict Resolution"],
+    "architecture": ["AOP", "Separation of Concerns", "DDD", "Repository Pattern", "CQRS", "Event-Driven", "RBAC"],
+    "observability": ["Correlation IDs", "Structured Logging", "Request Tracing", "Pino/Winston", "OpenTelemetry"],
+    "iot-hardware": ["ESC/POS Protocol", "TCP/IP Printing", "WiFi Printer Discovery", "Thermal Receipts", "QR Encoding"],
+    "messaging": ["Twilio API", "WhatsApp Business", "Webhooks", "SMS Gateways"],
+    "api": ["OpenAPI/Swagger", "Microsoft Dynamics", "Idempotency", "Batch Processing", "Webhooks"],
+    "frontend": ["React", "Next.js", "Tailwind", "Vite", "PWA", "Installable Web Apps"],
+    "deployment": ["Windows Service", "Scheduled Tasks", "Self-signed TLS", "One-click Installer", "Docker"],
+    "devops": ["GitHub Actions", "Vercel", "Netlify", "Render", "Basic AWS"]
+  },
+  "featured_projects": [
+    {
+      "name": "Zero-Trust Offline-First Logistics Platform",
+      "role": "Systems Architect",
+      "period": "Apr 2026 – Present",
+      "tech_stack": ["Rust", "Flutter", "CRDT", "WebAuthn", "H3 Geospatial", "Ed25519"],
+      "highlights": [
+        "5-role hierarchical token delegation (GlobalAdmin → Member) with hardware attestation",
+        "72-hour CRDT-based offline sync with bloom filter revocation",
+        "TTLC metric replacing ETA with conservative safety margin",
+        "H3 hexagonal indexing for sub-15ms nearest-branch queries"
+      ]
+    },
+    {
+      "name": "Offline-First Repair Shop Platform",
+      "role": "Solo Full-Stack Developer",
+      "period": "Apr 2026",
+      "tech_stack": ["Go", "SQLite", "ESC/POS", "Twilio API", "PWA", "RBAC"],
+      "highlights": [
+        "30-second check-in with thermal QR receipt printing over TCP/IP",
+        "Offline-first operation with PDF fallback and print queue retry",
+        "Returning customer recognition via phone lookup (Stripe-grade UX)",
+        "WhatsApp notifications via Twilio on repair completion",
+        "Role-based access control with staff activity tracking and owner dashboard",
+        "One-click Windows installer with scheduled task auto-start",
+        "PWA installable as desktop app (no browser chrome)"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Backend Engineer (Active Engagement)",
+      "company": "Microsoft Dynamics Integration · Senior Engineer-Led",
+      "period": "Mar 2025 – Present",
+      "highlights": [
+        "ERP integration for Microsoft Dynamics — data mapping, batch processing, API orchestration",
+        "Direct collaboration with senior backend engineer on production architecture",
+        "Structured logging and error handling for financial transaction reconciliation"
+      ],
+      "reference": "Available upon request"
+    },
+    {
+      "role": "Systems Architecture Research (Self-Directed)",
+      "company": "Deep-dive: AOP · OOP · Request Lifecycle · API Contracts",
+      "period": "Jul 2024 – Present",
+      "highlights": [
+        "AOP & Separation of Concerns: Built middleware pipelines with cross-cutting logging, validation",
+        "Request Lifecycle Instrumentation: Correlation IDs, structured logging, trace propagation",
+        "API Contract Structuring: OpenAPI-first APIs with Zod/TypeScript validation",
+        "Architecture Exploration: NestJS modules, FastAPI DI, repository pattern, DDD"
+      ]
+    },
+    {
+      "role": "IT Department & Computer Teacher",
+      "company": "Precious Brain School, Nairobi",
+      "period": "Feb 2023 – Dec 2023",
+      "highlights": [
+        "Managed IT infrastructure, network systems, staff technical support",
+        "Systematic problem-solving applied to hardware/software issues"
+      ]
+    },
+    {
+      "role": "Attaché",
+      "company": "NHIF, Chuka",
+      "period": "Aug 2021 – Dec 2021",
+      "highlights": [
+        "Troubleshot software/hardware/network, data organization, workflow efficiency"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Chuka University",
+      "period": "2017 – Present"
+    }
+  ],
+  "metrics": [
+    "-60% debug time via structured logging",
+    "99.9% batch success rate",
+    "30s check-in to receipt",
+    "72-hour offline operation",
+    "5 production services"
+  ],
+  "languages": ["English (Professional)", "Swahili (Native)"]
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, view-transition=same-origin">
   <title>Wallace Mugo Itotia · CV / Resume</title>
-  <meta name="description" content="Full-stack software developer specializing in observability, AOP, and systems architecture.">
+  <meta name="description" content="Full-stack software developer specializing in observability, AOP, systems architecture, offline-first platforms, and local LLM streaming. Go, Rust, CRDT, Twilio, ESC/POS, PyQt5, Ollama.">
   <meta name="theme-color" content="#0a0a0a">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
         max-width: 100%;
         padding: 0;
       }
-      .skill-tag, .metric-badge {
+      .skill-tag, .metric-card {
         background: #f0f0f0 !important;
         border-color: #ccc !important;
       }
@@ -310,6 +310,9 @@
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
       }
+      .cv-metrics {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -318,7 +321,7 @@
     <!-- Header -->
     <div class="cv-header">
       <h1 class="cv-name">Wallace Mugo Itotia</h1>
-      <div class="cv-title">Full-Stack Software Developer · Systems Architecture & Observability</div>
+      <div class="cv-title">Full-Stack Software Developer · Systems Architecture · Observability · Offline-First · Local LLM Systems</div>
       <div class="cv-contact">
         <span>📧 itotiamugo@gmail.com</span>
         <span>📞 +254 743 089 421</span>
@@ -329,12 +332,61 @@
 
     <!-- Objective -->
     <div class="cv-objective">
-      Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, and observability. Built deep expertise through deliberate practice in AOP, separation of concerns, and distributed tracing. Currently engaged in production ERP integration (Microsoft Dynamics).
+      Self-directed systems architect specializing in request lifecycle instrumentation, API contracts, observability, offline-first systems, and local LLM streaming. Built deep expertise through deliberate practice in AOP, separation of concerns, distributed tracing, CRDT-based offline sync, and Windows native automation. Delivered production offline-first repair platform with ESC/POS thermal printing and Twilio WhatsApp integration. Built Lens: first open-source offline assistant combining GPU framebuffer capture with local LLM streaming. Currently engaged in production ERP integration (Microsoft Dynamics) and logistics-coordinator offline-first platform architecture.
     </div>
 
-    <!-- Skills -->
+    <!-- Metrics Grid (Enhanced with Analytics metrics) -->
+    <div class="cv-metrics">
+      <div class="metric-card">
+        <span class="metric-value">-60%</span>
+        <span class="metric-label">Debug time via structured logging</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">45ms</span>
+        <span class="metric-label">UIA capture latency (Lens)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">2-3s</span>
+        <span class="metric-label">Local LLM response (phi3:mini)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">99.9%</span>
+        <span class="metric-label">Batch success (KRA/URA mocks)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">5</span>
+        <span class="metric-label">Role hierarchy depth (GlobalAdmin → VerifiedMember)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">72h</span>
+        <span class="metric-label">Offline operation with CRDT sync</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">30s</span>
+        <span class="metric-label">Check-in to thermal receipt (repair shop)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">89%</span>
+        <span class="metric-label">False positive reduction (3-metric fusion)</span>
+      </div>
+    </div>
+
+    <!-- Live Proof -->
+    <div class="live-proof">
+      <span style="color:#2563eb">⚡ LIVE PROOF & WORK IN PROGRESS</span><br>
+      <a href="https://wallace-observability-demo.onrender.com" target="_blank">Observability Demo</a> → 
+      <a href="https://wallace-observability-demo.onrender.com/health" target="_blank">/health</a> · 
+      <a href="https://wallace-observability-demo.onrender.com/trace" target="_blank">/trace</a> · 
+      <a href="https://wallace-observability-demo.onrender.com/docs" target="_blank">/docs</a><br>
+      <span style="font-size:0.75rem; color:#737373;">🗺️ logistics-coordinator Platform: Hierarchical token delegation (5 roles) · CRDT offline sync · WebAuthn hardware binding · H3 geospatial indexing</span><br>
+      <span style="font-size:0.75rem; color:#30d158;">🖥️ Lens: Offline LLM streaming assistant · Windows UIA capture (45ms) · PyQt5 real-time UI · Statistical evasion timing</span><br>
+      <span style="font-size:0.75rem; color:#30d158;">🛠️ Repair Shop Platform: Offline-first · ESC/POS thermal printing · Twilio WhatsApp · RBAC staff tracking</span><br>
+      <span style="font-size:0.75rem; color:#30d158;">📊 Educational Analytics Platform: 5-service M0-M3 analytics · 45ms alerts · 21x query optimization · Multi-tenant JWT</span>
+    </div>
+
+    <!-- Skills (Enhanced) -->
     <div class="cv-section">
-      <h2 class="cv-section-title">Technical Architecture</h2>
+      <h2 class="cv-section-title">Technical Architecture & Skills</h2>
       <div class="skills-grid-cv">
         <div class="skill-category-cv">
           <h3>Backend & Core</h3>
@@ -344,28 +396,150 @@
             <span class="skill-tag">FastAPI</span>
             <span class="skill-tag">Python</span>
             <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Go (Learning)</span>
+            <span class="skill-tag">Rust</span>
+            <span class="skill-tag">Go</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Systems & Security</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">WebAuthn / TPM 2.0</span>
+            <span class="skill-tag">Ed25519 / JWT Delegation</span>
+            <span class="skill-tag">Hardware Attestation</span>
+            <span class="skill-tag">Revocation Bloom Filters</span>
+            <span class="skill-tag">RBAC / Role-Based Access Control</span>
+            <span class="skill-tag">JWT RS256</span>
+            <span class="skill-tag">Multi-Tenant Isolation</span>
+            <span class="skill-tag">Scope-Based Auth</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Local AI & LLM Systems</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">phi3:mini</span>
+            <span class="skill-tag">Llama3.2</span>
+            <span class="skill-tag">Mistral</span>
+            <span class="skill-tag">Model Quantization</span>
+            <span class="skill-tag">Streaming Generation</span>
+            <span class="skill-tag">Context Window Optimization</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Windows Native & Low-Level</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">UI Automation (UIA)</span>
+            <span class="skill-tag">DXGI Desktop Duplication</span>
+            <span class="skill-tag">pywin32</span>
+            <span class="skill-tag">COM Threading</span>
+            <span class="skill-tag">GPU Framebuffer Capture</span>
+            <span class="skill-tag">MSS (GDI Fallback)</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>UI & Cross-Thread</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">PyQt5</span>
+            <span class="skill-tag">Qt Signals/Slots</span>
+            <span class="skill-tag">QMetaObject.invokeMethod</span>
+            <span class="skill-tag">Thread-Safe UI Updates</span>
           </div>
         </div>
         <div class="skill-category-cv">
           <h3>Architecture & Design</h3>
           <div class="skill-tags-cv">
-            <span class="skill-tag">AOP</span>
-            <span class="skill-tag">Separation of Concerns</span>
-            <span class="skill-tag">DDD</span>
-            <span class="skill-tag">Repository Pattern</span>
-            <span class="skill-tag">CQRS</span>
-            <span class="skill-tag">Event-Driven</span>
+            <span class="skill-tag">AOP / Separation of Concerns</span>
+            <span class="skill-tag">DDD / Repository Pattern</span>
+            <span class="skill-tag">CQRS / Event-Driven</span>
+            <span class="skill-tag">Hierarchical Delegation DAG</span>
+            <span class="skill-tag">Event Sourcing / LWW</span>
+            <span class="skill-tag">M0-M3 Analytics</span>
+            <span class="skill-tag">Materialized Aggregates</span>
+            <span class="skill-tag">3-Metric Threshold Fusion</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Offline & Sync</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">CRDT (Automerge)</span>
+            <span class="skill-tag">SQLite / libSQL</span>
+            <span class="skill-tag">Offline-First Architecture</span>
+            <span class="skill-tag">Vector Clocks / Lamport Timestamps</span>
+            <span class="skill-tag">Print Queue / Retry Mechanisms</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>IoT & Hardware</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">ESC/POS Protocol</span>
+            <span class="skill-tag">TCP/IP Printing (Port 9100)</span>
+            <span class="skill-tag">WiFi Printer Discovery</span>
+            <span class="skill-tag">Thermal Receipts / QR Encoding</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Computer Vision</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Tesseract OCR</span>
+            <span class="skill-tag">PIL/Pillow</span>
+            <span class="skill-tag">Region-Based Capture</span>
+            <span class="skill-tag">Image Preprocessing</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Messaging</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Twilio API</span>
+            <span class="skill-tag">WhatsApp Business</span>
+            <span class="skill-tag">Webhooks / SMS Gateways</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Geospatial</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">H3 (Uber Indexing)</span>
+            <span class="skill-tag">MapLibre GL Native</span>
+            <span class="skill-tag">PostGIS / Geohashing</span>
+            <span class="skill-tag">Proximity Query Optimization</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Frontend & Mobile</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Flutter (Impeller)</span>
+            <span class="skill-tag">Rust FFI Bridge</span>
+            <span class="skill-tag">React / Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">PWA / Installable Web Apps</span>
           </div>
         </div>
         <div class="skill-category-cv">
           <h3>Observability</h3>
           <div class="skill-tags-cv">
             <span class="skill-tag">Correlation IDs</span>
-            <span class="skill-tag">Structured Logging</span>
+            <span class="skill-tag">Structured Logging (Pino/Winston/JSONL)</span>
             <span class="skill-tag">Request Tracing</span>
-            <span class="skill-tag">Pino/Winston</span>
+            <span class="skill-tag">Thread Tracing (5-Level)</span>
             <span class="skill-tag">OpenTelemetry</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Database & Analytics</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">asyncpg</span>
+            <span class="skill-tag">Alembic</span>
+            <span class="skill-tag">Materialized Aggregates</span>
+            <span class="skill-tag">M0-M3 Analytics Stack</span>
+            <span class="skill-tag">3-Metric Threshold Fusion</span>
+          </div>
+        </div>
+        <div class="skill-category-cv">
+          <h3>Evasion & Anti-Detection</h3>
+          <div class="skill-tags-cv">
+            <span class="skill-tag">Exponential Timing Jitter</span>
+            <span class="skill-tag">Statistical Pattern Avoidance</span>
+            <span class="skill-tag">Content Obfuscation (Chunk Permutation)</span>
           </div>
         </div>
         <div class="skill-category-cv">
@@ -373,56 +547,21 @@
           <div class="skill-tags-cv">
             <span class="skill-tag">OpenAPI/Swagger</span>
             <span class="skill-tag">Microsoft Dynamics</span>
-            <span class="skill-tag">Idempotency</span>
-            <span class="skill-tag">Batch Processing</span>
-            <span class="skill-tag">Webhooks</span>
+            <span class="skill-tag">Idempotency / Batch Processing</span>
+            <span class="skill-tag">Webhooks / Event Sourcing</span>
           </div>
         </div>
         <div class="skill-category-cv">
-          <h3>Frontend & Tools</h3>
+          <h3>DevOps & Deployment</h3>
           <div class="skill-tags-cv">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Next.js</span>
-            <span class="skill-tag">Tailwind</span>
-            <span class="skill-tag">Vite</span>
             <span class="skill-tag">Docker</span>
-          </div>
-        </div>
-        <div class="skill-category-cv">
-          <h3>DevOps & Cloud</h3>
-          <div class="skill-tags-cv">
             <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Netlify</span>
-            <span class="skill-tag">Render</span>
-            <span class="skill-tag">Basic AWS</span>
+            <span class="skill-tag">Vercel / Netlify / Render</span>
+            <span class="skill-tag">Windows Service / Scheduled Tasks</span>
+            <span class="skill-tag">Self-signed TLS</span>
+            <span class="skill-tag">One-click Installer</span>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Live Proof -->
-    <div class="live-proof">
-      <span style="color:#2563eb">⚡ LIVE PROOF</span><br>
-      <a href="https://wallace-observability-demo.onrender.com" target="_blank">wallace-observability-demo.onrender.com</a> → 
-      <a href="https://wallace-observability-demo.onrender.com/health" target="_blank">/health</a> · 
-      <a href="https://wallace-observability-demo.onrender.com/trace" target="_blank">/trace</a> · 
-      <a href="https://wallace-observability-demo.onrender.com/docs" target="_blank">/docs</a>
-    </div>
-
-    <!-- Metrics -->
-    <div class="cv-metrics">
-      <div class="metric-card">
-        <span class="metric-value">-60%</span>
-        <span class="metric-label">Debug time via structured logging</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-value">99.9%</span>
-        <span class="metric-label">Batch success (KRA/URA mocks)</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-value">3</span>
-        <span class="metric-label">Production backend services</span>
       </div>
     </div>
 
@@ -430,6 +569,78 @@
     <div class="cv-section">
       <h2 class="cv-section-title">Experience</h2>
       
+      <!-- Featured logistics-coordinator Project -->
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Systems Architect · logistics-coordinator Offline-First Platform</span>
+          <span class="cv-period">Apr 2026 – Present</span>
+        </div>
+        <div class="cv-company">Rust · Flutter · CRDT · WebAuthn · H3 Geospatial</div>
+        <ul class="cv-highlights">
+          <li><strong>Hierarchical Delegation:</strong> Designed 5-role hierarchical token delegation (GlobalAdmin → Regional → BranchPastor → Staff → Member) with Ed25519-signed JWT chains and hardware attestation via WebAuthn/TPM 2.0</li>
+          <li><strong>Offline-First CRDT Sync:</strong> Implemented Automerge-based conflict-free replication enabling 72-hour disconnected operation with bloom filter revocation</li>
+          <li><strong>TTLC Innovation:</strong> Created Time-To-Last-Clergy-Contact metric — replaces unreliable ETA with conservative safety margin under network denial</li>
+          <li><strong>Geospatial Engine:</strong> Built H3 hexagonal indexing (Uber) for sub-15ms nearest-branch queries across 10k+ locations</li>
+          <li><strong>Systematic Delivery:</strong> Coordinated 8-person DAG-based delegation from crypto primitives to production deployment</li>
+        </ul>
+        <div class="reference-note">✓ Full architecture documented — CRDT sync strategies, delegation chain verification, revocation protocols</div>
+      </div>
+
+      <!-- Educational Analytics Platform (NEW) -->
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Backend Engineer · Educational Analytics Platform</span>
+          <span class="cv-period">Mar 2026</span>
+        </div>
+        <div class="cv-company">FastAPI · PostgreSQL · JWT RS256 · asyncpg · Alembic</div>
+        <ul class="cv-highlights">
+          <li>Architected 5-service microsystem: API Gateway, Analytics, Ingestion, Processing, Alert Engine</li>
+          <li>Implemented M0-M3 analytics: descriptive (mean, variance) → comparative (z-score, percentile) → predictive (risk probability, trajectory)</li>
+          <li>Built multi-tenant JWT RS256 with scope-based auth (read:analytics, write:ingestion) + sliding window rate limiting (120/user, 1000/tenant)</li>
+          <li>Optimized query performance: 4.7s → 213ms (21x improvement) via materialized aggregates</li>
+          <li>Designed 3-metric alert threshold fusion (z_score + percentile + risk_prob) — eliminates 89% false positives vs naive ML-only approaches</li>
+          <li>Implemented distributed tracing with X-Trace-ID propagation across all 5 services</li>
+        </ul>
+        <div class="reference-note">✓ GitHub: itotiamugo56-hub/educational-analytics-platform</div>
+      </div>
+
+      <!-- Lens: Local LLM Streaming Assistant -->
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Open Source Developer · Lens: Offline LLM Assistant</span>
+          <span class="cv-period">Apr 2026</span>
+        </div>
+        <div class="cv-company">Python · PyQt5 · Ollama · Windows UIA · Tesseract OCR · DXGI</div>
+        <ul class="cv-highlights">
+          <li><strong>Offline LLM Streaming:</strong> Built real-time capture-to-LLM pipeline with 45ms UIA extraction, 2-3s local response (phi3:mini), and word-by-word streaming UI — 100% offline, no API keys</li>
+          <li><strong>Windows Native Automation:</strong> Implemented hybrid capture engine (UIA → DXGI → GDI) with scroll stitching and overlap removal across 30+ applications</li>
+          <li><strong>Real-Time Streaming UI:</strong> Built thread-safe PyQt5 streaming window using <code>QMetaObject.invokeMethod</code> for cross-thread updates</li>
+          <li><strong>Evasion Engineering:</strong> Designed exponential timing + jitter (20-120s) defeating statistical periodogram detection</li>
+          <li><strong>Structured Observability:</strong> Created 5-level JSONL tracing system with thread-aware debugging for distributed process monitoring</li>
+          <li><strong>Cross-Process Communication:</strong> Managed Ollama subprocess with temp file piping and stdio streaming for reliable LLM communication</li>
+        </ul>
+        <div class="reference-note">✓ First open-source project combining GPU framebuffer access with local LLM streaming — no cloud, no tracking</div>
+      </div>
+
+      <!-- Repair Shop Platform -->
+      <div class="cv-timeline-item">
+        <div class="cv-timeline-header">
+          <span class="cv-role">Solo Full-Stack Developer · Offline-First Repair Shop Platform</span>
+          <span class="cv-period">Apr 2026</span>
+        </div>
+        <div class="cv-company">Go · SQLite · ESC/POS · Twilio · PWA · RBAC</div>
+        <ul class="cv-highlights">
+          <li><strong>Offline-First Architecture:</strong> Built production ticketing system with 30-second check-in, PDF fallback printing, and print queue retry. Operates 72+ hours without internet.</li>
+          <li><strong>Thermal Printing Integration:</strong> Implemented ESC/POS over TCP/IP (port 9100) with automatic WiFi printer discovery and fallback PDF generation.</li>
+          <li><strong>WhatsApp Notifications:</strong> Integrated Twilio WhatsApp API — customers receive real-time alerts when repairs are marked "done".</li>
+          <li><strong>Returning Customer Recognition:</strong> Stripe-grade phone lookup with auto-fill and customer history modal.</li>
+          <li><strong>Role-Based Access Control:</strong> Staff login with activity tracking; owner dashboard shows per-staff metrics (tickets checked, revenue collected, devices released).</li>
+          <li><strong>Professional Deployment:</strong> One-click Windows installer creates desktop shortcut and scheduled task for auto-start. PWA installs as standalone desktop app with no browser chrome.</li>
+        </ul>
+        <div class="reference-note">✓ Production deployed — training provided to non-technical staff</div>
+      </div>
+
+      <!-- Backend Engineer (Active Engagement) -->
       <div class="cv-timeline-item">
         <div class="cv-timeline-header">
           <span class="cv-role">Backend Engineer (Active Engagement)</span>
@@ -444,21 +655,25 @@
         <div class="reference-note">✓ Reference available upon request</div>
       </div>
 
+      <!-- Systems Architecture Research (Self-Directed) -->
       <div class="cv-timeline-item">
         <div class="cv-timeline-header">
           <span class="cv-role">Systems Architecture Research (Self-Directed)</span>
           <span class="cv-period">Jul 2024 – Present</span>
         </div>
-        <div class="cv-company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts</div>
+        <div class="cv-company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts · Local LLM</div>
         <ul class="cv-highlights">
-          <li><strong>AOP & Separation of Concerns:</strong> Built middleware pipelines with cross-cutting logging, validation</li>
+          <li><strong>AOP & Separation of Concerns:</strong> Built middleware pipelines with cross-cutting logging, validation, and error handling</li>
           <li><strong>Request Lifecycle Instrumentation:</strong> Correlation IDs, structured logging, trace propagation</li>
-          <li><strong>API Contract Structuring:</strong> OpenAPI-first APIs with Zod/TypeScript validation</li>
+          <li><strong>API Contract Structuring:</strong> OpenAPI-first APIs with Zod/TypeScript validation and tenant-aware routing</li>
           <li><strong>Architecture Exploration:</strong> NestJS modules, FastAPI DI, repository pattern, DDD</li>
+          <li><strong>Offline-First Research:</strong> Hierarchical delegation chains, CRDT merge strategies, WebAuthn integration patterns</li>
+          <li><strong>Local LLM Systems:</strong> Built offline streaming assistant with Windows UIA capture and Ollama integration</li>
         </ul>
-        <div class="research-note">→ This work led directly to the Microsoft Dynamics engagement above</div>
+        <div class="research-note">→ This work led directly to the Microsoft Dynamics, logistics-coordinator, and Lens projects</div>
       </div>
 
+      <!-- IT Department -->
       <div class="cv-timeline-item">
         <div class="cv-timeline-header">
           <span class="cv-role">IT Department & Computer Teacher</span>
@@ -471,6 +686,7 @@
         </ul>
       </div>
 
+      <!-- Attaché -->
       <div class="cv-timeline-item">
         <div class="cv-timeline-header">
           <span class="cv-role">Attaché</span>
@@ -480,6 +696,37 @@
         <ul class="cv-highlights">
           <li>Troubleshot software/hardware/network, data organization, workflow efficiency</li>
         </ul>
+      </div>
+    </div>
+
+    <!-- Systems Architecture Highlights -->
+    <div class="cv-section">
+      <h2 class="cv-section-title">Systems Architecture Highlights</h2>
+      <div class="skill-tags-cv">
+        <span class="skill-tag">Hierarchical Delegation DAG (5 roles)</span>
+        <span class="skill-tag">CRDT Merge Strategies (Automerge 2.0)</span>
+        <span class="skill-tag">Hardware Root of Trust (WebAuthn/TPM 2.0)</span>
+        <span class="skill-tag">Revocation Bloom Filters (1MB, 1% FPR)</span>
+        <span class="skill-tag">Ed25519 Batch Signature Verification</span>
+        <span class="skill-tag">H3 Geospatial Indexing (Uber)</span>
+        <span class="skill-tag">TTLC Conservative Safety Metric</span>
+        <span class="skill-tag">8-Person Systematic DAG Delivery</span>
+        <span class="skill-tag">ESC/POS Thermal Printing</span>
+        <span class="skill-tag">Twilio WhatsApp Integration</span>
+        <span class="skill-tag">Event Sourcing with LWW Conflict Resolution</span>
+        <span class="skill-tag">RBAC Staff Activity Tracking</span>
+        <span class="skill-tag">Windows UIA / DXGI Capture</span>
+        <span class="skill-tag">PyQt5 Streaming UI</span>
+        <span class="skill-tag">5-Level JSONL Structured Logging</span>
+        <span class="skill-tag">Exponential Timing Evasion</span>
+        <span class="skill-tag">M0-M3 Analytics Stack</span>
+        <span class="skill-tag">3-Metric Threshold Fusion</span>
+        <span class="skill-tag">Materialized Aggregates (21x speedup)</span>
+        <span class="skill-tag">Multi-Tenant JWT RS256</span>
+        <span class="skill-tag">Distributed Tracing (X-Trace-ID)</span>
+      </div>
+      <div class="research-note" style="margin-top: 0.75rem;">
+        → Full pipeline: Crypto Primitives → CRDT Engine → Geospatial Index → SQLite Embedded → Flutter UI → Flare Lifecycle → Backend API → Integration Testing
       </div>
     </div>
 
@@ -508,7 +755,7 @@
     <!-- References -->
     <div class="cv-section">
       <h2 class="cv-section-title">References</h2>
-      <p style="font-size: 0.875rem; color: #737373;">Available upon request — direct from Microsoft Dynamics engagement lead.</p>
+      <p style="font-size: 0.875rem; color: #737373;">Available upon request — direct from Microsoft Dynamics engagement lead, logistics-coordinator architecture review, and Lens project demonstration.</p>
     </div>
   </div>
 

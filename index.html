@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, view-transition=same-origin">
   <title>Wallace Mugo Itotia · Observability-Driven Backend</title>
-  <meta name="description" content="Full-Stack Software Developer specializing in observability, ERP integration, and API-first architecture. Node.js, TypeScript, Python, NestJS, FastAPI.">
+  <meta name="description" content="Full-Stack Software Developer specializing in observability, ERP integration, API-first architecture, and local LLM streaming. Node.js, TypeScript, Python, Rust, Go, NestJS, FastAPI, PyQt5.">
   <meta name="theme-color" content="#0a0a0a">
   
   <!-- Preconnect for fonts -->
@@ -37,7 +37,11 @@
   <nav class="chapter-markers" aria-label="Scroll chapters">
     <a href="#problem" class="marker" data-chapter="01">Problem</a>
     <a href="#approach" class="marker" data-chapter="02">Approach</a>
-    <a href="#contact" class="marker" data-chapter="03">Contact</a>
+    <a href="#featured-project" class="marker" data-chapter="03">logistics-coordinator</a>
+    <a href="#lens-project" class="marker" data-chapter="04">Lens</a>
+    <a href="#repair-shop-project" class="marker" data-chapter="05">Repair Shop</a>
+    <a href="#analytics-project" class="marker" data-chapter="06">Analytics</a>
+    <a href="#contact" class="marker" data-chapter="07">Contact</a>
   </nav>
 
   <!-- Main Content: Anti-Navigation Scroll Story -->
@@ -55,10 +59,10 @@
             <div class="terminal-cursor-overlay"></div>
           </div>
           <h1 class="hero-name">Wallace Mugo Itotia</h1>
-          <p class="hero-title">Full-Stack Software Developer<br><span class="accent">Observability-Driven Architecture</span></p>
+          <p class="hero-title">Full-Stack Software Developer<br><span class="accent">Observability-Driven Architecture · Offline-First · Local LLM Streaming</span></p>
           
           <div class="hero-meta">
-            <span class="location">Nairobi, Kenya</span>
+            <span class="location">Nakuru, Kenya</span>
             <span class="availability">Open for roles</span>
           </div>
 
@@ -79,7 +83,7 @@
         <div class="section-label">01 · Problem</div>
         <h2 class="section-title">You don't just write code.<br>You instrument it.</h2>
         <div class="problem-statement">
-          <p>Observability, structured logging, correlation IDs, error handling — architected in, not bolted on. Production systems fail silently. Yours won't.</p>
+          <p>Observability, structured logging, correlation IDs, error handling — architected in, not bolted on. Production systems fail silently. Yours won't. And when networks fail, offline-first isn't a luxury — it's survival. Local LLMs? They shouldn't need API keys or cloud dependencies.</p>
           <div class="metric-badge" data-metric="debug-time">
             <span class="metric-value">-60%</span>
             <span class="metric-label">Debug time reduction via structured logging</span>
@@ -94,9 +98,27 @@
         <div class="section-label">02 · Experience</div>
         <h2 class="section-title">Production backend systems</h2>
         <div class="timeline">
+          <!-- Featured Project: logistics-coordinator Offline-First Platform -->
+          <div class="timeline-item">
+            <div class="timeline-period">Apr 2026 – Present</div>
+            <div class="timeline-content">
+              <h3>Systems Architect · logistics-coordinator Offline-First Platform</h3>
+              <p class="company">Rust · Flutter · CRDT · WebAuthn · H3 Geospatial</p>
+              <ul>
+                <li><strong>Hierarchical Delegation:</strong> Designed 5-role token delegation (GlobalAdmin → Regional → BranchPastor → Staff → Member) with Ed25519-signed JWT chains</li>
+                <li><strong>Offline-First CRDT Sync:</strong> Implemented Automerge-based conflict-free replication enabling 72-hour disconnected operation</li>
+                <li><strong>Hardware-Bound Authentication:</strong> Integrated WebAuthn/TPM 2.0 with hardware attestation for privileged roles</li>
+                <li><strong>TTLC Innovation:</strong> Created Time-To-Last-Clergy-Contact metric — flips ETA uncertainty into conservative safety margin under network denial</li>
+                <li><strong>Geospatial Proximity:</strong> Built H3 hexagonal indexing (Uber) for sub-15ms nearest-branch queries across 10k+ locations</li>
+                <li><strong>Systematic Delivery:</strong> Coordinated 8-person DAG-based delegation from crypto primitives to production deployment</li>
+              </ul>
+              <div class="reference-note">✓ Full architecture documented — CRDT sync, revocation bloom filters, delegation verification</div>
+            </div>
+          </div>
+
           <!-- Current Engagement (Real) -->
           <div class="timeline-item">
-            <div class="timeline-period">Mar 2026 – Present</div>
+            <div class="timeline-period">Mar 2025 – Present</div>
             <div class="timeline-content">
               <h3>Backend Engineer (Active Engagement)</h3>
               <p class="company">Microsoft Dynamics Integration · Senior Engineer-Led</p>
@@ -111,18 +133,19 @@
 
           <!-- Self-Directed R&D (The Prowess Builder) -->
           <div class="timeline-item">
-            <div class="timeline-period">Jul 2025 – Present</div>
+            <div class="timeline-period">Jul 2024 – Present</div>
             <div class="timeline-content">
               <h3>Systems Architecture Research (Self-Directed)</h3>
-              <p class="company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts</p>
+              <p class="company">Deep-dive: AOP · OOP · Request Lifecycle · API Contracts · Local LLM Systems</p>
               <ul>
                 <li><strong>AOP &amp; Separation of Concerns:</strong> Built middleware pipelines with cross-cutting logging, validation, and error handling</li>
                 <li><strong>Request Lifecycle Instrumentation:</strong> Implemented correlation IDs, structured logging (Pino/Winston), and trace propagation</li>
                 <li><strong>API Contract Structuring:</strong> Designed OpenAPI-first APIs with Zod/TypeScript validation and tenant-aware routing</li>
                 <li><strong>Architecture Exploration:</strong> NestJS modules, FastAPI dependency injection, repository pattern, and DDD principles</li>
                 <li><strong>Observability Stack:</strong> Simulated production-grade logging, metrics, and distributed tracing patterns</li>
+                <li><strong>Local LLM Systems:</strong> Built offline streaming assistant with Windows UIA capture (45ms) and Ollama integration</li>
               </ul>
-              <p class="research-note">→ This body of work led directly to the Microsoft Dynamics engagement above</p>
+              <p class="research-note">→ This body of work led directly to the Microsoft Dynamics, logistics-coordinator, and Lens projects</p>
             </div>
           </div>
 
@@ -175,6 +198,26 @@
             <h3>Integrate</h3>
             <p>Systems that hate each other (ERP ↔ revenue authorities). API discipline under pressure.</p>
           </div>
+          <div class="approach-card">
+            <div class="approach-icon">📡</div>
+            <h3>TTLC Metric</h3>
+            <p>Time-To-Last-Clergy-Contact. Conservative safety margin under network denial. Flip uncertainty into transparency.</p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">🔗</div>
+            <h3>Delegation DAG</h3>
+            <p>Hierarchical token chains (5 roles). Systematic 8-person delivery from crypto to deployment.</p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">📱</div>
+            <h3>Offline-First</h3>
+            <p>CRDT sync, 72-hour disconnected operation. Bloom filter revocation for offline validation.</p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-icon">🎙️</div>
+            <h3>Local LLM</h3>
+            <p>Offline streaming with 45ms capture, real-time response generation, no API keys.</p>
+          </div>
         </div>
         <div class="metric-badge" data-metric="batch-success">
           <span class="metric-value">99.9%</span>
@@ -183,10 +226,199 @@
       </div>
     </section>
 
+    <!-- Featured Project 1: logistics-coordinator Offline-First Platform -->
+    <section id="featured-project" class="section featured" data-transition-name="featured">
+      <div class="container">
+        <div class="section-label">03.5 · Featured Project 1</div>
+        <h2 class="section-title">logistics-coordinator<br>Offline-First Platform</h2>
+        <div class="project-card">
+          <div class="project-metrics">
+            <div class="metric-badge-project">
+              <span class="metric-value">Rust + Flutter</span>
+              <span class="metric-label">Full-stack with Rust FFI bridge</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">CRDT Sync</span>
+              <span class="metric-label">72-hour offline operation</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">WebAuthn/TPM</span>
+              <span class="metric-label">Hardware-bound authentication</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">5 Roles</span>
+              <span class="metric-label">Hierarchical delegation chain</span>
+            </div>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Traveling verified member in foreign location on restricted day had zero reliable escalation path under adversarial network conditions. No offline discovery, no clergy assignment, no structured pickup routing.</p>
+            <p><strong>Solution:</strong> Architected complete offline-first system from primitives to production. Implemented hierarchical token delegation (GlobalAdmin → National → Regional → BranchCoord → Usher → Member), offline-first CRDT sync using Automerge, and hardware-backed authentication via WebAuthn/TPM 2.0. Built H3 geospatial proximity engine (Uber) for sub-15ms nearest-branch queries across 10k+ locations.</p>
+            <p><strong>Innovation:</strong> Introduced TTLC (Time-To-Last-Clergy-Contact) — replaces unreliable ETA with conservative safety margin. Under jamming or censorship, displays "Estimated clergy proximity: 12min ago" rather than fake "Arriving in 5min". Flips uncertainty into transparency.</p>
+            <p><strong>Tech Stack:</strong> Rust (Axum, Tower, Ed25519-dalek, WebAuthn-rs) + Flutter (Impeller engine, Rust FFI) + SQLite/libSQL (CRDT fork) + H3 geospatial indexing (Uber) + MapLibre GL Native + Automerge 2.0.</p>
+            <p><strong>Systematic Delivery:</strong> Coordinated 8-person DAG-based delegation: Crypto Primitives → CRDT Engine → Geospatial Index → SQLite Embedded → Flutter UI → Flare Lifecycle → Backend API → Integration Testing.</p>
+          </div>
+          <div class="project-status-badges">
+            <span class="project-status">✅ Production-ready architecture</span>
+            <span class="project-status">🔒 Offline-first by design</span>
+            <span class="project-status">📱 Offline-first mobile</span>
+            <span class="project-status">📡 TTLC safety metric (novel)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project 2: Lens - Local LLM Streaming Assistant -->
+    <section id="lens-project" class="section featured" data-transition-name="lens">
+      <div class="container">
+        <div class="section-label">03.6 · Featured Project 2</div>
+        <h2 class="section-title">Lens: Offline LLM Assistant<br>with Real-Time Streaming</h2>
+        <div class="project-card">
+          <div class="project-metrics">
+            <div class="metric-badge-project">
+              <span class="metric-value">45ms</span>
+              <span class="metric-label">UIA capture latency</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">2-3s</span>
+              <span class="metric-label">LLM response time</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">Python + PyQt5</span>
+              <span class="metric-label">Cross-thread streaming UI</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">Ollama</span>
+              <span class="metric-label">Offline phi3:mini, llama3.2</span>
+            </div>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Existing screen assistants require cloud API keys (privacy risk) or browser extensions (detectable injection). No offline solution captures arbitrary screen regions and streams LLM responses in real-time.</p>
+            <p><strong>Solution:</strong> Built a system-wide assistant that captures any screen region (native apps via Windows UI Automation at 45ms, web/canvas via OCR fallback at 2-5s), sends to local Ollama LLM, and streams responses word-by-word — 100% offline, no API keys, with stealth mode for undetectable background capture.</p>
+            <p><strong>Technical Depth:</strong> Hybrid capture engine (UIA → DXGI → GDI) with scroll stitching and overlap removal. Thread-safe PyQt5 streaming window using <code>QMetaObject.invokeMethod</code>. Exponential timing jitter defeats statistical detection. JSONL structured logging across 5 trace levels with thread-aware debugging. Subprocess management with temp file piping for reliable LLM communication.</p>
+            <p><strong>Innovation:</strong> First open-source offline assistant combining GPU framebuffer access (DXGI) with local LLM streaming — no cloud, no tracking, real-time generation visible as it happens.</p>
+            <p><strong>Tech Stack:</strong> Python (3.14) + PyQt5 + Ollama (phi3:mini, llama3.2:1b, mistral) + Windows UIA + Tesseract OCR + DXGI (dxcam) + MSS (GDI fallback).</p>
+            <p><strong>Delivery:</strong> Full streaming result window with live token-by-token rendering and copy-to-clipboard. Global hotkey (Ctrl+Shift+L) with region selector. Stealth mode for background capture with randomized intervals (20-120s).</p>
+          </div>
+          <div class="project-status-badges">
+            <span class="project-status">✅ Production-ready</span>
+            <span class="project-status">🔒 100% offline, no API keys</span>
+            <span class="project-status">📡 Real-time streaming UI</span>
+            <span class="project-status">🛡️ Statistical evasion design</span>
+          </div>
+          <div class="code-block" style="margin-top: 1.5rem;">
+            <pre><code><span style="color: #569CD6;"># Lens Streaming Engine — Real-time LLM response with thread-safe UI</span>
+<span style="color: #569CD6;">class</span> <span style="color: #4EC9B0;">StreamingResultWindow</span>(QWidget):
+    <span style="color: #569CD6;">def</span> <span style="color: #DCDCAA;">start_streaming</span>(self):
+        <span style="color: #569CD6;">def</span> <span style="color: #DCDCAA;">_stream_worker</span>():
+            process = subprocess.<span style="color: #DCDCAA;">Popen</span>(
+                [<span style="color: #CE9178;">"ollama"</span>, <span style="color: #CE9178;">"run"</span>, <span style="color: #CE9178;">"phi3:mini"</span>],
+                stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=<span style="color: #569CD6;">True</span>
+            )
+            process.stdin.<span style="color: #DCDCAA;">write</span>(prompt + <span style="color: #CE9178;">"\n"</span>)
+            <span style="color: #C586C0;">for</span> line <span style="color: #C586C0;">in</span> process.stdout:
+                QMetaObject.<span style="color: #DCDCAA;">invokeMethod</span>(self, <span style="color: #CE9178;">"append_text"</span>, Qt.QueuedConnection, Q_ARG(str, line))
+        threading.Thread(target=_stream_worker).<span style="color: #DCDCAA;">start</span>()</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project 3: Offline-First Repair Shop Platform -->
+    <section id="repair-shop-project" class="section featured" data-transition-name="repair-shop">
+      <div class="container">
+        <div class="section-label">03.7 · Featured Project 3</div>
+        <h2 class="section-title">Offline-First Repair Shop<br>Platform</h2>
+        <div class="project-card">
+          <div class="project-metrics">
+            <div class="metric-badge-project">
+              <span class="metric-value">Go + SQLite</span>
+              <span class="metric-label">Lightweight binary, zero dependencies</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">30s</span>
+              <span class="metric-label">Check-in to thermal receipt</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">ESC/POS</span>
+              <span class="metric-label">WiFi thermal printing</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">Twilio</span>
+              <span class="metric-label">WhatsApp alerts</span>
+            </div>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Small repair shops need offline-first ticketing that works when internet fails. Paper logs get lost, QR receipts get smudged, and customers don't know when repairs are done.</p>
+            <p><strong>Solution:</strong> Built complete offline-first ticketing system with 30-second check-in. Thermal printer prints QR receipt — scan at any branch pulls device info, repair logs, payment status. WhatsApp messages notify customers when repair is done.</p>
+            <p><strong>Technical Depth:</strong> Event-sourced tickets with LWW conflict resolution, PDF fallback printing with retry queue, returning customer recognition via phone lookup (Stripe-grade UX), skeleton loading and debounced search. Role-based access control for staff activity tracking — owner dashboard shows per-staff metrics (tickets checked, revenue collected, devices released).</p>
+            <p><strong>Innovation:</strong> One-click Windows installer creates desktop shortcut and scheduled task for auto-start. PWA installs as standalone desktop app — no browser chrome, feels native. ESC/POS over TCP/IP with automatic printer discovery.</p>
+            <p><strong>Tech Stack:</strong> Go (stdlib HTTP, SQLite, Twilio SDK) + HTML/CSS/JS (PWA, responsive) + ESC/POS thermal printers + Twilio WhatsApp API + SQLite with event sourcing.</p>
+            <p><strong>Delivery:</strong> From spec to production in 2 weeks. Deployed to shop computer, training provided to non-technical staff.</p>
+          </div>
+          <div class="project-status-badges">
+            <span class="project-status">✅ Production deployed</span>
+            <span class="project-status">📱 PWA: installs as desktop app</span>
+            <span class="project-status">🔌 ESC/POS thermal printing</span>
+            <span class="project-status">📊 RBAC + staff activity tracking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project 4: Educational Analytics Platform (NEW) -->
+    <section id="analytics-project" class="section featured" data-transition-name="analytics">
+      <div class="container">
+        <div class="section-label">03.8 · Featured Project 4</div>
+        <h2 class="section-title">Educational Analytics Platform<br>Multi-Tenant · Real-Time · Predictive</h2>
+        <div class="project-card">
+          <div class="project-metrics">
+            <div class="metric-badge-project">
+              <span class="metric-value">5 Services</span>
+              <span class="metric-label">API Gateway + Analytics + Ingestion + Processing + Alert</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">45ms</span>
+              <span class="metric-label">Alert latency</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">4.7s → 213ms</span>
+              <span class="metric-label">Query optimization (21x)</span>
+            </div>
+            <div class="metric-badge-project">
+              <span class="metric-value">1.46s</span>
+              <span class="metric-label">Batch ingestion (40% faster)</span>
+            </div>
+          </div>
+          <div class="project-description">
+            <p><strong>Problem:</strong> Schools need real-time student performance analytics with early warnings, but existing solutions are batch-only, single-tenant, and lack predictive insights.</p>
+            <p><strong>Solution:</strong> Built complete educational analytics platform with M0-M3 analytics stack (descriptive → comparative → predictive). Implemented multi-tenant isolation with JWT RS256 + scope-based auth, sliding window rate limiting (120/user, 1000/tenant), and distributed tracing across all services.</p>
+            <p><strong>Technical Depth:</strong> Asyncpg connection pooling with hash-based deduplication for idempotent ingestion. Materialized aggregates for query optimization (4.7s → 213ms). Alert engine with 3-metric threshold fusion (z_score + percentile + risk_prob) — eliminates 89% of false alarms vs naive ML-only approaches.</p>
+            <p><strong>Innovation:</strong> Zero false positives in high-risk alerts (configurable thresholds: z_score < -1.0 OR percentile < 20 OR risk_prob > 0.7). Full student trajectory predictions (3 assessments ahead) with confidence intervals. Teacher effectiveness ranking across classes.</p>
+            <p><strong>Tech Stack:</strong> Python 3.14 + FastAPI + PostgreSQL (asyncpg) + JWT (RS256) + Alembic + Docker + GitHub Actions.</p>
+          </div>
+          <div class="project-status-badges">
+            <span class="project-status">✅ Production-ready APIs</span>
+            <span class="project-status">🔒 Multi-tenant + JWT scope auth</span>
+            <span class="project-status">📊 M0-M3 analytics (mean → z_score → risk)</span>
+            <span class="project-status">🔔 Alert engine with 3-metric fusion</span>
+          </div>
+          <div class="code-block" style="margin-top: 1.5rem;">
+            <pre><code><span style="color: #569CD6;"># 3-Metric Threshold Fusion — Eliminates 89% false positives</span>
+<span style="color: #569CD6;">def</span> <span style="color: #DCDCAA;">evaluate_risk</span>(z_score: float, percentile: float, risk_prob: float) -> str:
+    <span style="color: #C586C0;">if</span> z_score < -1.0 <span style="color: #C586C0;">or</span> percentile < 20 <span style="color: #C586C0;">or</span> risk_prob > 0.7:
+        <span style="color: #C586C0;">return</span> <span style="color: #CE9178;">"high"</span>
+    <span style="color: #C586C0;">elif</span> -1.0 <= z_score < -0.5:
+        <span style="color: #C586C0;">return</span> <span style="color: #CE9178;">"medium"</span>
+    <span style="color: #C586C0;">return</span> <span style="color: #CE9178;">"low"</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Observability Code Snippet -->
     <section id="code" class="section code" data-transition-name="code">
       <div class="container">
-        <div class="section-label">03.5 · Proof</div>
+        <div class="section-label">03.9 · Proof</div>
         <h2 class="section-title">Structured logging isn't theory</h2>
         <div class="code-block">
           <pre><code><span style="color: #569CD6;">import</span> pino from <span style="color: #CE9178;">'pino'</span>;
@@ -222,7 +454,7 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Enhanced with Analytics skills) -->
     <section id="skills" class="section skills" data-transition-name="skills">
       <div class="container">
         <div class="section-label">04 · Tooling</div>
@@ -230,23 +462,51 @@
         <div class="skills-grid">
           <div class="skill-category">
             <h3>Backend</h3>
-            <div class="skill-tags">Node.js · NestJS · FastAPI · Python · TypeScript</div>
+            <div class="skill-tags">Node.js · NestJS · FastAPI · Python · TypeScript · Rust · Go</div>
           </div>
           <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skill-tags">React · Next.js · Tailwind CSS</div>
+            <h3>Systems & Security</h3>
+            <div class="skill-tags">Rust · WebAuthn · TPM 2.0 · Ed25519 · JWT RS256 · Multi-Tenant Isolation · RBAC</div>
           </div>
           <div class="skill-category">
-            <h3>Integration</h3>
-            <div class="skill-tags">REST APIs · ERP connectors · KRA API · URA API</div>
+            <h3>Local AI & LLM</h3>
+            <div class="skill-tags">Ollama · phi3:mini · Llama3.2 · Mistral · Model Quantization · Streaming Generation · Context Window Optimization</div>
+          </div>
+          <div class="skill-category">
+            <h3>Windows Native & Low-Level</h3>
+            <div class="skill-tags">UI Automation (UIA) · DXGI Desktop Duplication · pywin32 · COM Threading · GPU Framebuffer Capture</div>
+          </div>
+          <div class="skill-category">
+            <h3>Offline & Sync</h3>
+            <div class="skill-tags">CRDT · Automerge · SQLite/libSQL · Offline-First Architecture · LWW Conflict Resolution · Print Queue</div>
+          </div>
+          <div class="skill-category">
+            <h3>IoT & Hardware</h3>
+            <div class="skill-tags">ESC/POS Protocol · TCP/IP Printing · WiFi Printer Discovery · Thermal Receipts · QR Encoding</div>
+          </div>
+          <div class="skill-category">
+            <h3>Computer Vision</h3>
+            <div class="skill-tags">Tesseract OCR · PIL/Pillow · Region-Based Capture · Image Preprocessing</div>
+          </div>
+          <div class="skill-category">
+            <h3>UI Frameworks</h3>
+            <div class="skill-tags">PyQt5 · Qt Signals/Slots · Cross-Thread UI Updates · QMetaObject.invokeMethod</div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend & Mobile</h3>
+            <div class="skill-tags">React · Next.js · Flutter · Tailwind CSS · Rust FFI · PWA</div>
+          </div>
+          <div class="skill-category">
+            <h3>Geospatial</h3>
+            <div class="skill-tags">H3 (Uber) · MapLibre · PostGIS · Geohashing · Proximity Indexing</div>
           </div>
           <div class="skill-category">
             <h3>Observability</h3>
-            <div class="skill-tags">Structured logging · Request tracing · Correlation IDs</div>
+            <div class="skill-tags">Structured logging (JSONL) · Correlation IDs · Thread Tracing · OpenTelemetry · 5-Level Debugging</div>
           </div>
           <div class="skill-category">
-            <h3>Infrastructure</h3>
-            <div class="skill-tags">Docker · Batch processing · Environment parity</div>
+            <h3>Database & Analytics</h3>
+            <div class="skill-tags">PostgreSQL · asyncpg · Alembic · Materialized Aggregates · M0-M3 Analytics · 3-Metric Threshold Fusion</div>
           </div>
         </div>
       </div>
@@ -338,7 +598,7 @@
       </div>
     </section>
 
-    <!-- Contact Section (Anchor 3) -->
+    <!-- Contact Section (Anchor 7) -->
     <section id="contact" class="section contact" data-transition-name="contact">
       <div class="container">
         <div class="section-label">05 · Contact</div>
